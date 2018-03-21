@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>WEB后台管理 · GitBook</title>
+        <title>支付API · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="app.html" />
     
-    
-    <link rel="prev" href="controller.html" />
+    <link rel="prev" href="wechat.html" />
     
 
     </head>
@@ -219,7 +217,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.11" data-path="admin.html">
+        <li class="chapter " data-level="1.11" data-path="admin.html">
             
                 <a href="admin.html">
             
@@ -271,7 +269,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.15" data-path="pay.html">
+        <li class="chapter active" data-level="1.15" data-path="pay.html">
             
                 <a href="pay.html">
             
@@ -314,7 +312,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >WEB后台管理</a>
+        <a href="." >支付API</a>
     </h1>
 </div>
 
@@ -329,14 +327,27 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="web&#x6A21;&#x5757;">web&#x6A21;&#x5757;</h1>
-<pre><code>common        &#x540E;&#x53F0;&#x516C;&#x5171;
-template    &#x6A21;&#x7248;&#x6587;&#x4EF6;
-resource    &#x540E;&#x53F0;&#x9759;&#x6001;&#x8D44;&#x6E90;
-source        &#x540E;&#x53F0;&#x6A21;&#x5757;&#x76EE;&#x5F55;
-themes        &#x4E3B;&#x9898;&#x76EE;&#x5F55;
-index.php    &#x540E;&#x53F0;&#x5165;&#x53E3;&#x6587;&#x4EF6;
+                                <h1 id="&#x652F;&#x4ED8;api">&#x652F;&#x4ED8;API</h1>
+<pre><code class="lang-PHP">&#x5728;&#x7EBF;&#x652F;&#x4ED8;
+&#x5FAE;&#x64CE;&#x4E2D;&#x96C6;&#x6210;&#x4E86;&#x76EE;&#x524D;&#x4E3B;&#x6D41;&#x7684;&#x5728;&#x7EBF;&#x652F;&#x4ED8;&#xFF0C;&#x5206;&#x522B;&#x5982;&#x4E0B;&#xFF1A;
+
+&#x5FAE;&#x4FE1;&#x652F;&#x4ED8; (https:<span class="hljs-comment">//pay.weixin.qq.com)</span>
+&#x767E;&#x5EA6;&#x94B1;&#x5305; (http:<span class="hljs-comment">//b.baifubao.com)</span>
+&#x94F6;&#x8054;&#x652F;&#x4ED8; (http:<span class="hljs-comment">//mobile.unionpay.com/preference)</span>
+&#x652F;&#x4ED8;&#x5B9D; (https:<span class="hljs-comment">//e.alipay.com/index.htm)</span>
+&#x901A;&#x8FC7;&#x652F;&#x4ED8;&#x63D0;&#x4F9B;&#x5546;&#x7533;&#x8BF7;&#x5230;&#x6743;&#x9650;&#xFF0C;&#x5728;&#x5FAE;&#x64CE;&#x4E2D;&#x901A;&#x8FC7; &#x529F;&#x80FD;&#x9009;&#x9879; -&gt; &#x652F;&#x4ED8;&#x53C2;&#x6570; &#x6765;&#x5F00;&#x542F;&#x67D0;&#x4E2A;&#x652F;&#x4ED8;&#x65B9;&#x5F0F;&#x3002;
+
+&#x5FAE;&#x4FE1;&#x652F;&#x4ED8;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x652F;&#x4ED8;&#x6388;&#x6743;&#x57DF;&#x540D; http:<span class="hljs-comment">//&#x4F60;&#x7684;&#x5FAE;&#x64CE;&#x57DF;&#x540D;/payment/wechat/ &#x548C; http://&#x4F60;&#x7684;&#x5FAE;&#x64CE;&#x57DF;&#x540D;/app/</span>
 </code></pre>
+<p>&#x5DE5;&#x4F5C;&#x6D41;&#x7A0B;</p>
+<pre><code class="lang-php">&#x7528;&#x6237;&#x5728;&#x4F7F;&#x7528;&#x6A21;&#x5757;&#x529F;&#x80FD;&#x9700;&#x8981;&#x652F;&#x4ED8;&#x65F6;&#xFF0C;&#x6A21;&#x5757;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684; $this-&gt;pay($params); &#x65B9;&#x6CD5;&#x6765;&#x8C03;&#x7528;&#x7CFB;&#x7EDF;&#x652F;&#x4ED8;&#x529F;&#x80FD;&#x3002;
+&#x7CFB;&#x7EDF;&#x6536;&#x94F6;&#x53F0;&#x63A5;&#x5230;&#x6A21;&#x5757;&#x8C03;&#x7528;&#x8BF7;&#x6C42;&#xFF0C;&#x751F;&#x6210;&#x652F;&#x4ED8;&#x754C;&#x9762;&#xFF08;&#x91D1;&#x989D;&#xFF0C;&#x5546;&#x54C1;&#x4FE1;&#x606F;&#x7B49;&#xFF09;&#x3002;
+&#x7528;&#x6237;&#x5728;&#x6536;&#x94F6;&#x53F0;&#x4E2D;&#x9009;&#x62E9;&#x652F;&#x4ED8;&#x624B;&#x6BB5;&#xFF0C;&#x5982;&#x5FAE;&#x4FE1;&#x652F;&#x4ED8;&#xFF0C;&#x652F;&#x4ED8;&#x5B9D;&#x652F;&#x6301;&#x7B49;&#xFF08;&#x9700;&#x8981;&#x5728;&#x652F;&#x4ED8;&#x53C2;&#x6570;&#x4E2D;&#x8BBE;&#x7F6E;&#x5F00;&#x542F;&#xFF09;&#x3002;
+&#x6536;&#x94F6;&#x53F0;&#x6839;&#x636E;&#x7528;&#x6237;&#x9009;&#x62E9;&#x7684;&#x652F;&#x4ED8;&#x624B;&#x6BB5;&#xFF0C;&#x8BF7;&#x6C42;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x652F;&#x4ED8;&#x63A5;&#x53E3;&#x4E0A;&#xFF0C;&#x7528;&#x6237;&#x5B8C;&#x6210;&#x652F;&#x4ED8;&#x3002;
+&#x5B8C;&#x6210;&#x652F;&#x4ED8;&#x540E;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x8C03;&#x7528;&#x6A21;&#x5757;&#x4E2D;&#x7684; $this-&gt;payResult($params); &#x65B9;&#x6CD5;&#x6765;&#x901A;&#x77E5;&#x652F;&#x4ED8;&#x72B6;&#x6001;&#xFF08;&#x6210;&#x529F;&#x6216;&#x662F;&#x5931;&#x8D25;&#xFF09;&#x3002;
+</code></pre>
+<p><img src="http://cdn.w7.cc/images/2017/08/02/15016129195980cb7730ddf_h7yd4YxC7o7O.jpg" alt="&#x652F;&#x4ED8;&#x6D41;&#x7A0B;"></p>
+
                                 
                                 </section>
                             
@@ -363,14 +374,10 @@ index.php    &#x540E;&#x53F0;&#x5165;&#x53E3;&#x6587;&#x4EF6;
 
             
                 
-                <a href="controller.html" class="navigation navigation-prev " aria-label="Previous page: 控制器">
+                <a href="wechat.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 微信API">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="app.html" class="navigation navigation-next " aria-label="Next page: APP管理">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -379,7 +386,7 @@ index.php    &#x540E;&#x53F0;&#x5165;&#x53E3;&#x6587;&#x4EF6;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"WEB后台管理","level":"1.11","depth":1,"next":{"title":"APP管理","level":"1.12","depth":1,"path":"app.md","ref":"app.md","articles":[]},"previous":{"title":"控制器","level":"1.10","depth":1,"path":"controller.md","ref":"controller.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"admin.md","mtime":"2018-03-21T00:31:09.545Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-21T08:16:45.888Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"支付API","level":"1.15","depth":1,"previous":{"title":"微信API","level":"1.14","depth":1,"path":"wechat.md","ref":"wechat.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pay.md","mtime":"2018-03-21T01:12:15.776Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-21T08:16:45.888Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,0 +1,531 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>模块开发 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="wechat.html" />
+    
+    
+    <link rel="prev" href="app.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="evn.html">
+            
+                <a href="evn.html">
+            
+                    
+                    环境要求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="php_edit.html">
+            
+                <a href="php_edit.html">
+            
+                    
+                    微擎项目结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="devbook.html">
+            
+                <a href="devbook.html">
+            
+                    
+                    微擎开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="common.html">
+            
+                <a href="common.html">
+            
+                    
+                    全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="message.html">
+            
+                <a href="message.html">
+            
+                    
+                    微信消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="template.html">
+            
+                <a href="template.html">
+            
+                    
+                    网站模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="route.html">
+            
+                <a href="route.html">
+            
+                    
+                    URL路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="controller.html">
+            
+                <a href="controller.html">
+            
+                    
+                    控制器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="admin.html">
+            
+                <a href="admin.html">
+            
+                    
+                    WEB后台管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="app.html">
+            
+                <a href="app.html">
+            
+                    
+                    APP管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="modules.html">
+            
+                <a href="modules.html">
+            
+                    
+                    模块开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="wechat.html">
+            
+                <a href="wechat.html">
+            
+                    
+                    微信API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="pay.html">
+            
+                <a href="pay.html">
+            
+                    
+                    支付API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >模块开发</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6A21;&#x5757;&#x5F00;&#x53D1;&#x7684;&#x914D;&#x7F6E;">&#x6A21;&#x5757;&#x5F00;&#x53D1;&#x7684;&#x914D;&#x7F6E;</h1>
+<p>&#x9879;&#x76EE;&#x7ED3;&#x6784;&#x914D;&#x7F6E;&#x6587;&#x4EF6;: manifest.xml</p>
+<pre><code class="lang-xml">&lt;xm&lt;x&gt;l version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;manifest xm&lt;x&gt;lns=&quot;http://www.we7.cc&quot; versionCode=&quot;0.6&quot;&gt;
+    &lt;application setting=&quot;true&quot; cloud_setting=&quot;true&quot;&gt;
+        &lt;name&gt;&lt;![CDATA[&#x5FAE;&#x5546;&#x57CE;]]&gt;&lt;/name&gt;
+        &lt;identifie&gt;&lt;![CDATA[ewei_shopping]]&gt;&lt;/identifie&gt;
+        &lt;version&gt;&lt;![CDATA[6.9.9]]&gt;&lt;/version&gt;
+        &lt;type&gt;&lt;![CDATA[business]]&gt;&lt;/type&gt;
+        &lt;ability&gt;&lt;![CDATA[&#x5FAE;&#x5546;&#x57CE;]]&gt;&lt;/ability&gt;
+        &lt;desc&lt;x&gt;ription&gt;&lt;![CDATA[&#x5FAE;&#x5546;&#x57CE;]]&gt;&lt;/desc&lt;x&gt;ription&gt;
+        &lt;author&gt;&lt;![CDATA[WeEngine Team &amp; ewei]]&gt;&lt;/author&gt;
+        &lt;url&gt;&lt;![CDATA[url]]&gt;&lt;/url&gt;
+    &lt;/application&gt;
+    &lt;platform&gt;
+        &lt;subscribes&gt;
+            &lt;message type=&quot;text&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;image&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;voice&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;video&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;shortvideo&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;location&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;li&lt;x&gt;nk&quot;/&gt;
+            &lt;message type=&quot;subscribe&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;unsubscribe&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;qr&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;trace&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;click&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;view&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;merchant_order&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;user_get_card&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;user_del_card&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;user_consume_card&quot;&gt;&lt;/message&gt;
+        &lt;/subscribes&gt;
+        &lt;handles&gt;
+            &lt;message type=&quot;text&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;image&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;voice&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;video&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;shortvideo&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;location&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;li&lt;x&gt;nk&quot;/&gt;
+            &lt;message type=&quot;subscribe&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;qr&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;trace&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;click&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;merchant_order&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;user_get_card&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;user_del_card&quot;&gt;&lt;/message&gt;
+            &lt;message type=&quot;user_consume_card&quot;&gt;&lt;/message&gt;
+        &lt;/handles&gt;
+        &lt;supports&gt;
+            &lt;item type=&quot;plugin&quot; &gt;&lt;/item&gt;
+            &lt;item type=&quot;wxapp&quot; &gt;&lt;/item&gt;
+            &lt;item type=&quot;app&quot; &gt;&lt;/item&gt;
+            &lt;item type=&quot;system_welcome&quot; &gt;&lt;/item&gt;
+            &lt;item type=&quot;webapp&quot; &gt;&lt;/item&gt;
+        &lt;/supports&gt;
+        &lt;plugin-main name=&quot;wx_nstore&quot; &gt;&lt;/plugin&gt;
+        &lt;plugins&gt;
+            &lt;item name=&quot;ewei_hotel&quot; &gt;&lt;/item&gt;
+            &lt;item name=&quot;ewei_hotel2&quot; &gt;&lt;/item&gt;
+        &lt;/plugins&gt;
+        &lt;rule em&lt;x&gt;bed=&quot;true&quot; /&gt;
+        &lt;card em&lt;x&gt;bed=&quot;true&quot; /&gt;
+        &lt;oauth type=&quot;userinfo&quot; &gt;&lt;/oauth&gt;
+    &lt;/platform&gt;
+    &lt;bindings&gt;
+        &lt;cover&gt;
+            &lt;entry title=&quot;&#x529F;&#x80FD;&#x5C01;&#x9762;&quot; do=&quot;cover&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+            &lt;entry title=&quot;&#x529F;&#x80FD;&#x5C01;&#x9762;2&quot; do=&quot;cover2&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+        &lt;/cover&gt;
+        &lt;rule&gt;
+            &lt;entry title=&quot;&#x89C4;&#x5219;&quot; do=&quot;rule&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+            &lt;entry title=&quot;&#x89C4;&#x5219;2&quot; do=&quot;rule2&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+        &lt;/rule&gt;
+        &lt;menu&gt;
+            &lt;entry title=&quot;&#x7BA1;&#x7406;&#x4E2D;&#x5FC3;&quot; do=&quot;menu&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+            &lt;entry title=&quot;&#x7BA1;&#x7406;&#x4E2D;&#x5FC3;2&quot; do=&quot;menu2&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+        &lt;/menu&gt;
+        &lt;home&gt;
+            &lt;entry title=&quot;&#x9996;&#x9875;&#x5BFC;&#x822A;&quot; do=&quot;home&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+            &lt;entry title=&quot;&#x9996;&#x9875;&#x5BFC;&#x822A;2&quot; do=&quot;home2&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+        &lt;/home&gt;
+        &lt;profile&gt;
+            &lt;entry title=&quot;&#x4E2A;&#x4EBA;&#x4E2D;&#x5FC3;&#x5BFC;&#x822A;&quot; do=&quot;profile&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+            &lt;entry title=&quot;&#x4E2A;&#x4EBA;&#x4E2D;&#x5FC3;&#x5BFC;&#x822A;2&quot; do=&quot;profile2&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+        &lt;/profile&gt;
+        &lt;shortcut&gt;
+            &lt;entry title=&quot;&#x5FEB;&#x6377;&#x529F;&#x80FD;&quot; do=&quot;shortcut&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+            &lt;entry title=&quot;&#x5FEB;&#x6377;&#x529F;&#x80FD;2&quot; do=&quot;shortcut2&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+        &lt;/shortcut&gt;
+        &lt;function&gt;
+            &lt;entry title=&quot;&#x72EC;&#x7ACB;&#x529F;&#x80FD;&quot; do=&quot;func&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+            &lt;entry title=&quot;&#x72EC;&#x7ACB;&#x529F;&#x80FD;2&quot; do=&quot;func2&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+        &lt;/function&gt;
+        &lt;page&gt;
+            &lt;entry title=&quot;&#x9996;&#x9875;&quot; do=&quot;/we7_gs/pages/index/index&quot; state=&quot;&quot; direct=&quot;&quot;&gt;&lt;/entry&gt;
+            &lt;entry title=&quot;&#x4E3B;&#x9875;&quot; do=&quot;/we7_gs/pages/index/main&quot; state=&quot;&quot; direct=&quot;&quot;&gt;&lt;/entry&gt;
+        &lt;/page&gt;
+        &lt;system_welcome&gt;
+            &lt;entry title=&quot;systemwelcome&quot; do=&quot;systemwelcome&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+        &lt;/system_welcome&gt;
+        &lt;webapp&gt;
+            &lt;entry title=&quot;webapp&quot; do=&quot;webapp&quot; state=&quot;&quot; direct=&quot;false&quot;&gt;&lt;/entry&gt;
+        &lt;/webapp&gt;
+    &lt;/bindings&gt;
+    &lt;permissions&gt;
+        &lt;entry title=&quot;title1&quot; do=&quot;permission1&quot;&gt;&lt;/entry&gt;
+        &lt;entry title=&quot;title2&quot; do=&quot;permission2&quot;&gt;&lt;/entry&gt;
+    &lt;/permissions&gt;
+    &lt;install&gt;&lt;![CDATA[install.php]]&gt;&lt;/install&gt;
+    &lt;uninstall&gt;&lt;![CDATA[uninstall.php]]&gt;&lt;/uninstall&gt;
+    &lt;upgrade&gt;&lt;![CDATA[upgrade.php]]&gt;&lt;/upgrade&gt;
+&lt;/manifest&gt;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="app.html" class="navigation navigation-prev " aria-label="Previous page: APP管理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="wechat.html" class="navigation navigation-next " aria-label="Next page: 微信API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"模块开发","level":"1.13","depth":1,"next":{"title":"微信API","level":"1.14","depth":1,"path":"wechat.md","ref":"wechat.md","articles":[]},"previous":{"title":"APP管理","level":"1.12","depth":1,"path":"app.md","ref":"app.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"modules.md","mtime":"2018-03-21T01:14:22.416Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-21T08:16:45.888Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
